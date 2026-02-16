@@ -4,249 +4,356 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Amit Singh Sisodia - Software Developer with 12+ years of experience in full-stack development">
-    <title>Amit Singh Sisodia</title>
+    <title>Amit Singh Sisodia • Software Developer</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Monoton&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="grain-overlay"></div>
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
 
-    <nav class="nav">
-        <div class="nav-inner">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
             <a href="#" class="nav-logo">AS</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <header class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-gradient-bg"></div>
         <div class="hero-content">
-            <p class="hero-intro">Hello, I am</p>
+            <p class="hero-greeting">Hi, I'm</p>
             <h1 class="hero-name">
-                <span class="name-line">Amit Singh</span>
-                <span class="name-line accent">Sisodia</span>
+                <span class="name-first">Amit Singh</span>
+                <span class="name-last">Sisodia</span>
             </h1>
-            <div class="hero-tagline">
-                <span class="tagline-decorator"></span>
-                <p>Software Developer & Tech Lead</p>
+            <div class="hero-title">
+                <span class="title-prefix">I'm a</span>
+                <span class="typewriter-container">
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="typewriter-cursor"></span>
+                </span>
             </div>
-            <p class="hero-summary">Building digital solutions for over a decade. Currently leading teams at Xebia, crafting enterprise applications for global brands.</p>
-            <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                <a href="#experience" class="btn btn-outline">View Work</a>
+            <p class="hero-description">
+                Building digital solutions for over a decade. Currently leading teams at Xebia,
+                crafting enterprise applications for global brands.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#experience" class="btn btn-outline">View My Work</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">12+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Companies</span>
+                </div>
             </div>
         </div>
-        <div class="hero-decoration">
-            <span class="year-badge">12+</span>
-            <span class="year-label">Years of Experience</span>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-arrow"></div>
         </div>
-    </header>
+    </section>
 
-    <section id="about" class="section about">
-        <div class="section-grid">
-            <div class="section-label">
-                <span class="label-number">01</span>
-                <span class="label-text">About</span>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
             </div>
-            <div class="section-content">
-                <h2 class="section-title">A self-driven developer passionate about modern technologies</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <span>Photo</span>
+                        </div>
+                        <div class="image-border"></div>
+                    </div>
+                </div>
                 <div class="about-text">
-                    <p>With over 12 years in software development, I've had the privilege of working across multiple organizations and diverse tech stacks. My journey has taken me through various paradigms of programming languages, tools, and technologies that power the modern IT industry.</p>
-                    <p>I thrive in environments where I can lead small teams, mentor junior engineers, and deliver solutions that make a tangible impact. Currently, I'm building enterprise applications for Levi's at Xebia, focusing on React, TypeScript, and GraphQL ecosystems.</p>
-                </div>
-                <div class="about-education">
-                    <h3>Education</h3>
-                    <div class="education-item">
-                        <span class="degree">B.E. in Engineering</span>
-                        <span class="institution">Chhattisgarh Swami Vivekanand Technical University, Bhilai</span>
-                        <span class="year">2010</span>
-                    </div>
-                    <div class="education-item">
-                        <span class="degree">LL.B. Bachelor of Laws</span>
-                        <span class="institution">Savitribai Phule Pune University</span>
-                        <span class="year">2020</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section experience">
-        <div class="section-grid">
-            <div class="section-label">
-                <span class="label-number">02</span>
-                <span class="label-text">Experience</span>
-            </div>
-            <div class="section-content">
-                <div class="experience-list">
-
-                    <article class="experience-item">
-                        <div class="exp-header">
-                            <div class="exp-company">
-                                <h3>Xebia</h3>
-                                <span class="exp-location">Remote, India</span>
-                            </div>
-                            <span class="exp-period">May 2023 - Present</span>
+                    <h3 class="about-heading">A self-driven developer passionate about modern technologies</h3>
+                    <p>
+                        With over 12 years in software development, I've had the privilege of working
+                        across multiple organizations and diverse tech stacks. My journey has taken me
+                        through various paradigms of programming languages, tools, and technologies
+                        that power the modern IT industry.
+                    </p>
+                    <p>
+                        I thrive in environments where I can lead small teams, mentor junior engineers,
+                        and deliver solutions that make a tangible impact. Currently, I'm building
+                        enterprise applications for Levi's at Xebia, focusing on React, TypeScript,
+                        and GraphQL ecosystems.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Ratlam, Madhya Pradesh, India</span>
                         </div>
-                        <h4 class="exp-title">Lead Consultant (Tech Lead)</h4>
-                        <p class="exp-client">Client: Levi Strauss & Co.</p>
-                        <ul class="exp-details">
-                            <li>Leading development of Size Pro, an internal application for creating size profiles</li>
-                            <li>Building frontend with React and TypeScript</li>
-                            <li>Architecting backend using TypeScript, Knex.js, Drizzle ORM, GraphQL, and PostgreSQL</li>
-                            <li>Managing a team of 3 developers and a QA engineer</li>
-                        </ul>
-                    </article>
-
-                    <article class="experience-item">
-                        <div class="exp-header">
-                            <div class="exp-company">
-                                <h3>Arquebus LLC</h3>
-                                <span class="exp-location">Remote, India</span>
-                            </div>
-                            <span class="exp-period">Jul 2021 - May 2023</span>
+                        <div class="info-item">
+                            <span class="info-label">Email</span>
+                            <span class="info-value">sisodiasinghamit@gmail.com</span>
                         </div>
-                        <h4 class="exp-title">Senior Software Engineer</h4>
-                        <ul class="exp-details">
-                            <li>Built a Web3 blockchain-based donation platform for livestreamers with NFT rewards</li>
-                            <li>Developed frontend using ReScript/ReasonML with React/Next.js and Tailwind CSS</li>
-                            <li>Implemented serverless backend with AWS Lambda, Cognito, and PostgreSQL on RDS</li>
-                            <li>Managed database layer with Hasura GraphQL engine</li>
-                            <li>Mentored junior engineers in code quality and professional communication</li>
-                        </ul>
-                    </article>
-
-                    <article class="experience-item">
-                        <div class="exp-header">
-                            <div class="exp-company">
-                                <h3>Capgemini</h3>
-                                <span class="exp-location">Bengaluru & Pune, India</span>
-                            </div>
-                            <span class="exp-period">Jul 2015 - Jun 2021</span>
+                    </div>
+                    <div class="about-education">
+                        <h4>Education</h4>
+                        <div class="education-item">
+                            <span class="degree">B.E. in Engineering</span>
+                            <span class="school">Chhattisgarh Swami Vivekanand Technical University, Bhilai</span>
+                            <span class="year">2010</span>
                         </div>
-                        <h4 class="exp-title">Consultant</h4>
-                        <div class="exp-clients">
-                            <div class="client-project">
-                                <span class="client-name">GE Healthcare</span>
-                                <p>Led a 3-member automation team delivering POC for bedside monitor verification. Developed Java-based automation framework for end-to-end testing of healthcare monitoring solutions.</p>
-                            </div>
-                            <div class="client-project">
-                                <span class="client-name">EMC2</span>
-                                <p>Maintained and enhanced Virtual Data Protection (VDP) product. Worked across frontend and backend using JavaScript, Node.js, and React.</p>
-                            </div>
-                            <div class="client-project">
-                                <span class="client-name">Hitachi Healthcare</span>
-                                <p>Developed Java-based automation framework using LDTP, Sikuli, and shell scripts for CT scan application performance testing.</p>
-                            </div>
+                        <div class="education-item">
+                            <span class="degree">LL.B. Bachelor of Laws</span>
+                            <span class="school">Savitribai Phule Pune University</span>
+                            <span class="year">2020</span>
                         </div>
-                    </article>
-
-                    <article class="experience-item">
-                        <div class="exp-header">
-                            <div class="exp-company">
-                                <h3>Ericsson Global</h3>
-                                <span class="exp-location">Bengaluru, India</span>
-                            </div>
-                            <span class="exp-period">Dec 2011 - Jun 2015</span>
-                        </div>
-                        <h4 class="exp-title">Assistant Engineer</h4>
-                        <ul class="exp-details">
-                            <li>Developed automation applications that significantly reduced manual efforts across teams</li>
-                            <li>Gathered requirements and built custom tools to improve operational efficiency</li>
-                            <li>Created standalone applications for various operations teams</li>
-                            <li>Received performance award for automation contributions</li>
-                        </ul>
-                    </article>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section skills">
-        <div class="section-grid">
-            <div class="section-label">
-                <span class="label-number">03</span>
-                <span class="label-text">Skills</span>
-            </div>
-            <div class="section-content">
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <ul>
-                            <li>JavaScript / TypeScript</li>
-                            <li>ReScript / ReasonML</li>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>HTML / CSS</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>React</li>
-                            <li>Next.js</li>
-                            <li>Angular</li>
-                            <li>Vue.js</li>
-                            <li>Tailwind CSS</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Backend</h3>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>GraphQL</li>
-                            <li>Spring Boot</li>
-                            <li>Hibernate</li>
-                            <li>Knex.js / Drizzle ORM</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Database & Cloud</h3>
-                        <ul>
-                            <li>PostgreSQL</li>
-                            <li>SQL</li>
-                            <li>AWS (EC2, Cognito, Lambda, RDS)</li>
-                            <li>Hasura</li>
-                            <li>Docker</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Tools & Platforms</h3>
-                        <ul>
-                            <li>Git / GitHub</li>
-                            <li>Vercel</li>
-                            <li>Visual Studio Code</li>
-                            <li>Eclipse</li>
-                            <li>Perforce / SVN</li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact">
-        <div class="section-grid">
-            <div class="section-label">
-                <span class="label-number">04</span>
-                <span class="label-text">Contact</span>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Skills & Technologies</h2>
             </div>
-            <div class="section-content">
-                <h2 class="contact-heading">Let's work together</h2>
-                <p class="contact-text">I'm always interested in discussing new opportunities, challenging projects, or just having a conversation about technology.</p>
-                <div class="contact-details">
-                    <a href="mailto:sisodiasinghamit@gmail.com" class="contact-link">
-                        <span class="contact-label">Email</span>
-                        <span class="contact-value">sisodiasinghamit@gmail.com</span>
-                    </a>
-                    <div class="contact-link">
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Languages</h3>
+                    <ul class="skill-list">
+                        <li>JavaScript / TypeScript</li>
+                        <li>ReScript / ReasonML</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>HTML / CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Angular</li>
+                        <li>Vue.js</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>GraphQL</li>
+                        <li>Spring Boot</li>
+                        <li>Hibernate</li>
+                        <li>Knex.js / Drizzle ORM</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                    </div>
+                    <h3>Database & Cloud</h3>
+                    <ul class="skill-list">
+                        <li>PostgreSQL</li>
+                        <li>SQL</li>
+                        <li>AWS (EC2, Cognito, Lambda, RDS)</li>
+                        <li>Hasura</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <h3>Tools & Platforms</h3>
+                    <ul class="skill-list">
+                        <li>Git / GitHub</li>
+                        <li>Vercel</li>
+                        <li>Visual Studio Code</li>
+                        <li>Eclipse</li>
+                        <li>Perforce / SVN</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="exp-timeline">
+                <!-- Timeline center line -->
+                <div class="exp-timeline-line"></div>
+
+                <!-- Xebia -->
+                <div class="exp-timeline-item">
+                    <div class="exp-content-left">
+                        <div class="exp-box">
+                            <h3 class="exp-company">XEBIA</h3>
+                            <p class="exp-description">"Leading development of Size Pro application for Levi Strauss & Co. Managing a team of 3 developers and QA engineer. Building React/TypeScript frontend with GraphQL and PostgreSQL backend."</p>
+                        </div>
+                    </div>
+                    <div class="exp-logo-wrapper">
+                        <div class="exp-logo">
+                            <span class="exp-logo-text">X</span>
+                        </div>
+                    </div>
+                    <div class="exp-content-right">
+                        <span class="exp-period">May 2023 - Present</span>
+                    </div>
+                </div>
+
+                <!-- Arquebus LLC -->
+                <div class="exp-timeline-item">
+                    <div class="exp-content-left">
+                        <span class="exp-period">Jul 2021 - May 2023</span>
+                    </div>
+                    <div class="exp-logo-wrapper">
+                        <div class="exp-logo">
+                            <span class="exp-logo-text">A</span>
+                        </div>
+                    </div>
+                    <div class="exp-content-right">
+                        <div class="exp-box">
+                            <h3 class="exp-company">ARQUEBUS LLC</h3>
+                            <p class="exp-description">"Built Web3 blockchain-based donation platform with NFT rewards. Developed ReScript/ReasonML frontend with React/Next.js. Implemented AWS Lambda serverless backend with Hasura GraphQL."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Capgemini -->
+                <div class="exp-timeline-item">
+                    <div class="exp-content-left">
+                        <div class="exp-box">
+                            <h3 class="exp-company">CAPGEMINI</h3>
+                            <p class="exp-description">"Worked with GE Healthcare, EMC2, and Hitachi Healthcare. Led automation teams, developed Java-based frameworks, and built full-stack solutions using JavaScript, Node.js, and React."</p>
+                        </div>
+                    </div>
+                    <div class="exp-logo-wrapper">
+                        <div class="exp-logo">
+                            <span class="exp-logo-text">C</span>
+                        </div>
+                    </div>
+                    <div class="exp-content-right">
+                        <span class="exp-period">Jul 2015 - Jun 2021</span>
+                    </div>
+                </div>
+
+                <!-- Ericsson Global -->
+                <div class="exp-timeline-item">
+                    <div class="exp-content-left">
+                        <span class="exp-period">Dec 2011 - Jun 2015</span>
+                    </div>
+                    <div class="exp-logo-wrapper">
+                        <div class="exp-logo">
+                            <span class="exp-logo-text">E</span>
+                        </div>
+                    </div>
+                    <div class="exp-content-right">
+                        <div class="exp-box">
+                            <h3 class="exp-company">ERICSSON GLOBAL</h3>
+                            <p class="exp-description">"Developed automation applications reducing manual efforts across teams. Gathered requirements and built custom tools for operational efficiency. Received performance award for automation contributions."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm always interested in discussing new opportunities, challenging projects,
+                    or just having a conversation about technology. Feel free to reach out!
+                </p>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" required placeholder="Your message..." rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
                         <span class="contact-label">Location</span>
                         <span class="contact-value">Ratlam, Madhya Pradesh, India</span>
                     </div>
@@ -255,10 +362,30 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-inner">
-            <p class="footer-copyright">Amit Singh Sisodia</p>
-            <p class="footer-tagline">Crafting code since 2011</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Amit Singh Sisodia</div>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer-text">Crafting code since 2011</p>
+            </div>
         </div>
     </footer>
 
