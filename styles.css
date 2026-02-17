@@ -304,6 +304,7 @@ img {
     display: inline-flex;
     align-items: center;
     min-width: 280px;
+    height: 3.5rem;
 }
 
 .typewriter-text {
@@ -1183,7 +1184,7 @@ section {
 }
 
 .contact.animate::before {
-    height: 200px;
+    height: 110px;
 }
 
 .contact-content {
@@ -1547,6 +1548,7 @@ a.contact-value:hover {
     .typewriter-container {
         min-width: 200px;
         justify-content: center;
+        height: 2.5rem;
     }
 
     .typewriter-text {

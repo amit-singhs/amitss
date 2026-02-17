@@ -712,7 +712,7 @@
 
         // Initialize Typewriter effect
         new TypedText('typewriter', [
-            'Software Developer',
+            'AI First SW Developer',
             'Tech Lead',
             'Full Stack Engineer',
             'React Specialist',
