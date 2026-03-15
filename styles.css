@@ -630,6 +630,15 @@ section {
     border-color: var(--accent-primary);
 }
 
+.profile-image {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 8px;
+    display: block;
+}
+
 .image-border {
     position: absolute;
     top: 20px;
